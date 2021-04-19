@@ -12,3 +12,5 @@ advantages and drawbacks. Our application aims at combining the
 merits of both databases through a query analyzer which could act as a
 virtual querying agent for both Relational (MySQL) and NoSQL databases
 (MongoDB).
+
+Dependency -> Add all Jar files to classpath of the Java project
