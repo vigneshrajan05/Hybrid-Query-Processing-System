@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <database name="hqps">
+        <MySQL>
+            <!-- Table 1 : doctor -->
+            <doctor>
+                <d_id>d_id</d_id>
+                <name>name</name>
+                <gender>gender</gender>
+                <specialization>specialization</specialization>
+            </doctor>
+            
+            
+            <!--Table 2 : treatment_history -->
+            <treatment_history>
+                <pid>pid</pid>
+                <d_id>d_id</d_id>
+                <sid>sid</sid>
+            </treatment_history>
+            
+
+            <!--Table 3 : staff -->
+            <staff>
+                <s_id>s_id</s_id>
+                <staff_name>staff_name</staff_name>
+            </staff>
+
+        </MySQL>
+
+        <MongoDB>
+            <!--Collection 1 : patientDetails -->
+            <patientDetails>
+                <p_id>p_id</p_id>
+                <pname>pname</pname>
+                <age>age</age>
+                <bloodgroup>bloodgroup</bloodgroup>
+                <phoneno>phoneno</phoneno>
+                <roomno>roomno</roomno>
+                
+            </patientDetails>
+
+            <!--Collection 2 : medicalHistory -->
+            
+            <medicalHistory>
+                <p_id>p_id</p_id>
+                <d_id>d_id</d_id>
+                <disease>disease</disease>
+                <status>status</status>
+                <BP>BP</BP>
+            </medicalHistory>
+
+            <!--Collection 3 : treatment -->
+            <treatment>
+                <p_id>p_id</p_id>
+                <d_id>d_id</d_id>
+                <admission_date>admission_date</admission_date>
+                <discharged>discharged</discharged>
+                <treatmentname>treatmentname</treatmentname>
+            </treatment>
+        </MongoDB>
+    </database>
