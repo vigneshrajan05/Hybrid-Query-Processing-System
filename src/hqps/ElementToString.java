@@ -13,10 +13,10 @@ public class ElementToString {
 
 		public static String getString(Element x) {
 			
-			String temp = x.toString();
-			String pattern = "\\[[a-zA-z:\\s]+\\<([a-zA-Z_]+)/>]";
+		    String temp = x.toString();
+		    String pattern = "\\[[a-zA-z:\\s]+\\<([a-zA-Z_]+)/>]";
 			
-			// Creating Pattern object
+		    // Creating Pattern object
 		    Pattern p = Pattern.compile(pattern);
 
 		    // Now creating matcher object.
@@ -31,9 +31,9 @@ public class ElementToString {
 		
 		public static LinkedHashSet<String> getJoiningAttributeCondition(String temp) {
 			
-			String pattern = "d_id=([0-9]+)";
-			LinkedHashSet<String> ls = new LinkedHashSet<String>();
-			// Creating Pattern object
+		    String pattern = "d_id=([0-9]+)";
+		    LinkedHashSet<String> ls = new LinkedHashSet<String>();
+		    // Creating Pattern object
 		    Pattern p = Pattern.compile(pattern);
 
 		    // Now creating matcher object.
@@ -49,9 +49,9 @@ public class ElementToString {
 		
 		public static String getPatientName(String temp) {
 			
-			String pattern = "pname=([a-zA-Z]+)";
+		    String pattern = "pname=([a-zA-Z]+)";
 			
-			// Creating Pattern object
+		    // Creating Pattern object
 		    Pattern p = Pattern.compile(pattern);
 
 		    // Now creating matcher object.
